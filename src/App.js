@@ -113,6 +113,7 @@ function App() {
                     <Form.Control
                       type="text"
                       placeholder="Full Name"
+                      value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
                   </Col>
@@ -120,6 +121,7 @@ function App() {
                     <Form.Control
                       type="email"
                       placeholder="Email Address"
+                      value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </Col>
@@ -127,6 +129,7 @@ function App() {
                     <Form.Control
                       as="select"
                       onChange={(e) => setCountry(e.target.value)}
+                      value={country}
                     >
                       {countryList.map((country) => (
                         <option value={country}>{country}</option>
