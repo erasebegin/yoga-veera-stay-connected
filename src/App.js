@@ -141,7 +141,7 @@ function App() {
                 <Row>
                   <Col className="d-flex justify-content-center my-3">
                     <Button type="submit" disabled={loading}>
-                      Join Now
+                      {text.btn2}
                     </Button>
                   </Col>
                 </Row>
