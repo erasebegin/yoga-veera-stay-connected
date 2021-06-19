@@ -208,6 +208,7 @@ function App() {
 const MainContainer = styled(Container)`
   padding: 0;
   width: 100%;
+  font-family: 'Noto Sans', sans-serif;
   
   @media (max-width: 700px) {
     margin: 0;
@@ -223,8 +224,8 @@ const MainContainer = styled(Container)`
     border-radius: 10px;
     color: white;
     font-size: 1.25rem;
-    font-family: 'Fedra Sans', sans-serif;
-    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
     
     
     &:hover {
@@ -243,9 +244,9 @@ const MainContainer = styled(Container)`
     }
     @media (max-width: 700px) {
       background-image: url(${(props) => props.$bannerImageMobile});
-      background-position: 50% 0%;
+      background-position: 50% -60%;
       background-repeat: no-repeat;
-      min-height: 950px;
+      min-height: 800px;
       display: flex;
       align-items: flex-end;
       background-color: #F8F5F0;
@@ -262,8 +263,8 @@ const MainContainer = styled(Container)`
       }
 
       h1 {
-        font-family: 'Fedra Serif', serif;
-        font-weight: 400;
+        font-family: 'Noto Serif', serif;
+        font-weight: 700;
         font-size: 3.375rem;
         line-height: 3.75rem;
 
@@ -279,8 +280,8 @@ const MainContainer = styled(Container)`
       }
 
       h3 {
-        font-family: 'Fedra Sans', sans-serif;
-        font-weight: 500;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
         font-size: 1.25rem;
         color: var(--orangeDark2);
         padding: 2rem 0;
@@ -305,7 +306,7 @@ const MainContainer = styled(Container)`
       padding-bottom: 3rem;
 
       p {
-        font-family: 'Fedra Sans', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
         font-weight: 400;
         font-size: 1.125rem;
         padding-bottom: 2rem;
@@ -315,8 +316,8 @@ const MainContainer = styled(Container)`
 
     h2 {
       color: var(--blueDark);
-      font-family: 'Fedra Serif', serif;
-      font-weight: 500;
+      font-family: 'Noto Serif', serif;
+      font-weight: 700;
       font-size: 1.875rem;
       line-height: 2.7rem;
       text-align: center;
@@ -342,8 +343,8 @@ const MainContainer = styled(Container)`
       border-radius: 10px;
       padding: 0.625rem 1.875rem;
       font-size: 1.25rem;
-      font-family: 'Fedra Sans', sans-serif;
-      font-weight: 600;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 700;
       border: none;
       margin-top: 2rem;
     }
