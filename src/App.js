@@ -238,10 +238,18 @@ const MainContainer = styled(Container)`
     background-image: url(${(props) => props.$bannerImageDesktop});
     max-width: 1440px;
     
+    @media (max-width: 1000px) {
+      background-position: 50% 0%;
+    }
     @media (max-width: 700px) {
-      background-image: url(${(props) => props.$bannerImageDesktop});
+      background-image: url(${(props) => props.$bannerImageMobile});
       background-position: 50% 0%;
       background-repeat: no-repeat;
+      min-height: 950px;
+      display: flex;
+      align-items: flex-end;
+      background-color: #F8F5F0;
+      padding-bottom: 2rem;
     }
     
     .header-body {
