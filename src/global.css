@@ -110,7 +110,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -118,10 +118,15 @@ table {
   border-spacing: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   line-height: 1;
   margin: 0;
-  font-family: "Fira Sans", sans-serif;
+  overflow: hidden;
+  font-family: 'Fira Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -148,37 +153,35 @@ body {
 }
 
 @font-face {
-  font-family: "Fedra Serif";
-  src: local("Fedra Sans"), url(./fonts/FSerStdA-Book.otf) format("opentype");
+  font-family: 'Fedra Serif';
+  src: local('Fedra Sans'), url(./fonts/FSerStdA-Book.otf) format('opentype');
   font-weight: 300;
 }
 
-
 @font-face {
-  font-family: "Fedra Serif";
-  src: local("Fedra Sans"), url(./fonts/FSerStdA-Medium.otf) format("opentype");
+  font-family: 'Fedra Serif';
+  src: local('Fedra Sans'), url(./fonts/FSerStdA-Medium.otf) format('opentype');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Fedra Sans";
-  src: local("Fedra Sans"),
-    url(./fonts/FedraSansStd-Book.otf) format("opentype");
+  font-family: 'Fedra Sans';
+  src: local('Fedra Sans'),
+    url(./fonts/FedraSansStd-Book.otf) format('opentype');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Fedra Sans";
-  src: local("Fedra Sans"),
-    url(./fonts/FedraSansStd-Demi.otf) format("opentype");
+  font-family: 'Fedra Sans';
+  src: local('Fedra Sans'),
+    url(./fonts/FedraSansStd-Demi.otf) format('opentype');
   font-weight: 600;
 }
 
-
 @font-face {
-  font-family: "Fedra Sans";
-  src: local("Fedra Sans"),
-    url(./fonts/FedraSansStd-Bold.otf) format("opentype");
+  font-family: 'Fedra Sans';
+  src: local('Fedra Sans'),
+    url(./fonts/FedraSansStd-Bold.otf) format('opentype');
   font-weight: 700;
 }
 
@@ -188,12 +191,24 @@ footer {
   padding: 3rem;
 }
 
-  .logo .logo-img {
-    max-height: 30px;
-    margin-top: 8px;
-    margin-left: 10px;
+.logo .logo-img {
+  max-height: 30px;
+  margin-top: 8px;
+  margin-left: 10px;
 }
 
 .container-fluid {
   padding: 0;
+}
+
+.bottom-banner {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .bottom-banner {
+    width: unset;
+    max-width: unset;
+    height: 100px;
+    transform: translateX(-30%);
+  }
 }

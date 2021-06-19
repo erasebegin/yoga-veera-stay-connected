@@ -367,9 +367,6 @@ const MainContainer = styled(Container)`
     align-self: center;
   }
 
-  .bottom-banner {
-    width: 100%;
-  }
 `;
 
 export default App;
