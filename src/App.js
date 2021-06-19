@@ -5,13 +5,12 @@ import { Container, Col, Row, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './global.css';
 import countryList from './countryList';
+import ThankYouModal from './ThankYouModal';
 
 // IMAGES
 import sadhguruDesktop from './images/sadhguru_desktop.webp';
 import wheatMountain from './images/wheat-mountain.svg';
 import divider from './images/divider-yoga.svg';
-import android from './images/android.webp';
-import apple from './images/apple.webp';
 import flyingYogi from './images/footer-flying-yogi.jpg';
 
 function App() {
@@ -40,6 +39,7 @@ function App() {
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [showForm, setShowForm] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -60,6 +60,7 @@ function App() {
       setEmail('');
       setName('');
       setCountry('');
+      setShowModal(true);
       console.log(response);
     } catch (err) {
       console.log(err);
@@ -76,6 +77,11 @@ function App() {
   return (
     <>
       <MainContainer bannerImageDesktop={sadhguruDesktop}>
+        <ThankYouModal
+          modalOpen={showModal}
+          setModalOpen={setShowModal}
+          text={text}
+        />
         <header>
           <Col lg={6} md={8} sm={9} xs={12} className="header-body">
             <h1>{text.h1}</h1>
@@ -131,7 +137,7 @@ function App() {
                       onChange={(e) => setCountry(e.target.value)}
                       value={country}
                     >
-                      <option value={text.form1}>{text.form1}</option>
+                      <option value={text.form3}>{text.form3}</option>
                       {countryList.map((country) => (
                         <option value={country}>{country}</option>
                       ))}

@@ -46,7 +46,10 @@ const text = {
     h4: 'Внутренняя инженерия онлайн',
     form1: 'Полное имя',
     form2: 'Адрес электронной почты',
-    form3: 'Страна'
+    form3: 'Страна',
+    thanks1: 'Спасибо',
+    thanks2:
+      'Мы отправим вам подтверждение по электронной почте в ближайшее время'
   },
   it: {
     h1: 'Rimani in contatto con Sadhguru e Isha',
@@ -72,7 +75,9 @@ const text = {
     h4: 'Ingegneria Interiore Online',
     form1: 'Full Name',
     form2: 'Email Address',
-    form3: 'Country'
+    form3: 'Country',
+    thanks1: '',
+    thanks2: ''
   },
   es: {
     h1: 'Mantente en contacto con Sadhguru e Isha',
@@ -98,7 +103,9 @@ const text = {
     h4: 'Ingeniería Interior en Línea',
     form1: 'Full Name',
     form2: 'Email Address',
-    form3: 'Country'
+    form3: 'Country',
+    thanks1: '',
+    thanks2: ''
   },
   de: {
     h1: 'Bleib in Kontakt mit Sadhguru und Isha',
@@ -124,7 +131,9 @@ const text = {
     h4: 'Inner Engineering Online',
     form1: 'Vollständiger Name',
     form2: 'E-Mail Adresse',
-    form3: 'Land'
+    form3: 'Land',
+    thanks1: 'Dankeschön',
+    thanks2: 'Wir werden Ihnen in Kürze eine Bestätigungs-E-Mail schicken'
   },
   fr: {
     h1: 'Restez en contact avec Sadhguru et Isha',
@@ -150,7 +159,9 @@ const text = {
     h4: 'Ingénierie intérieure en ligne',
     form1: 'Nom complet',
     form2: 'Adresse e-mail',
-    form3: 'Pays'
+    form3: 'Pays',
+    thanks1: 'Merci',
+    thanks2: 'Nous vous enverrons un courriel de confirmation sous peu.'
   }
 };
 
