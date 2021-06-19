@@ -9,6 +9,7 @@ import ThankYouModal from './ThankYouModal';
 
 // IMAGES
 import sadhguruDesktop from './images/sadhguru_desktop.webp';
+import sadhguruMobile from './images/sadhguru_mobile.jpg';
 import wheatMountain from './images/wheat-mountain.svg';
 import divider from './images/divider-yoga.svg';
 import flyingYogi from './images/footer-flying-yogi.jpg';
@@ -76,7 +77,10 @@ function App() {
 
   return (
     <>
-      <MainContainer bannerImageDesktop={sadhguruDesktop}>
+      <MainContainer
+        $bannerImageDesktop={sadhguruDesktop}
+        $bannerImageMobile={sadhguruMobile}
+      >
         <ThankYouModal
           modalOpen={showModal}
           setModalOpen={setShowModal}
@@ -115,7 +119,7 @@ function App() {
               />
               <Form onSubmit={handleSubmit} id="email-form">
                 <Row className="form-inputs">
-                  <Col>
+                  <Col xs={12} md={4} className='my-2'>
                     <Form.Control
                       type="text"
                       placeholder={text.form1}
@@ -123,7 +127,7 @@ function App() {
                       onChange={(e) => setName(e.target.value)}
                     />
                   </Col>
-                  <Col>
+                  <Col xs={12} md={4} className='my-2'>
                     <Form.Control
                       type="email"
                       placeholder={text.form2}
@@ -131,7 +135,7 @@ function App() {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </Col>
-                  <Col>
+                  <Col xs={12} md={4} className='my-2'>
                     <Form.Control
                       as="select"
                       onChange={(e) => setCountry(e.target.value)}
@@ -204,11 +208,15 @@ function App() {
 const MainContainer = styled(Container)`
   padding: 0;
   width: 100%;
-
+  
+  @media (max-width: 700px) {
+    margin: 0;
+    max-width: 100%;
+  }
   .divider {
     margin: 2rem 0;
   }
-
+  
   .main-button {
     background: var(--orangeDark3);
     padding: 0.625rem 1.875rem;
@@ -217,27 +225,49 @@ const MainContainer = styled(Container)`
     font-size: 1.25rem;
     font-family: 'Fedra Sans', sans-serif;
     font-weight: 600;
-
+    
+    
     &:hover {
       text-decoration: none;
       opacity: 0.9;
     }
   }
-
+  
   header {
     min-height: 500px;
-    background-image: url(${(props) => props.bannerImageDesktop});
+    background-image: url(${(props) => props.$bannerImageDesktop});
     max-width: 1440px;
-
+    
+    @media (max-width: 700px) {
+      background-image: url(${(props) => props.$bannerImageDesktop});
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+    }
+    
     .header-body {
       width: 50%;
       padding: 4vw 0 0 3vw;
+      
+      @media (max-width: 700px) {
+        padding: 4vw 2rem 3vw;
+        width: 100%;
+      }
 
       h1 {
         font-family: 'Fedra Serif', serif;
         font-weight: 400;
         font-size: 3.375rem;
         line-height: 3.75rem;
+
+        @media (max-width: 1000px) {
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
+
+        @media (max-width: 700px) {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
       }
 
       h3 {
@@ -283,6 +313,11 @@ const MainContainer = styled(Container)`
       line-height: 2.7rem;
       text-align: center;
       margin-bottom: 1rem;
+
+      @media(max-width:700px){
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
     }
   }
 
@@ -312,6 +347,11 @@ const MainContainer = styled(Container)`
     justify-content: center;
     gap: 1rem;
     margin: 2rem 0 2rem;
+
+    @media(max-width: 600px){
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .button-bottom {
