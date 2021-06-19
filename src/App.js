@@ -68,7 +68,7 @@ function App() {
 
   useEffect(() => {
     const lng = queryData?.lang;
-    if (lng === 'es' || lng === 'it' || lng === 'ru') {
+    if (lng === 'es' || lng === 'it') {
       setShowForm(false);
     }
   }, []);
@@ -112,7 +112,7 @@ function App() {
                   <Col>
                     <Form.Control
                       type="text"
-                      placeholder="Full Name"
+                      placeholder={text.form1}
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
@@ -120,7 +120,7 @@ function App() {
                   <Col>
                     <Form.Control
                       type="email"
-                      placeholder="Email Address"
+                      placeholder={text.form2}
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -131,6 +131,7 @@ function App() {
                       onChange={(e) => setCountry(e.target.value)}
                       value={country}
                     >
+                      <option value={text.form1}>{text.form1}</option>
                       {countryList.map((country) => (
                         <option value={country}>{country}</option>
                       ))}
@@ -154,21 +155,17 @@ function App() {
             className="divider"
           />
           <div className="text-block">
-            <p>{text.p4}</p>
-          </div>
-          <div className="download-buttons">
-            <a href="https://play.google.com/store/apps/details?id=com.ishafoundation.app&hl=en">
-              <img
-                src={android}
-                alt="play store logo next to text that reads get it on google play"
-              />
-            </a>
-            <a href="https://apps.apple.com/us/app/sadhguru-yoga-meditation/id537568757">
-              <img
-                src={apple}
-                alt="apple logo next to text that reads download on the app store"
-              />
-            </a>
+            <p dangerouslySetInnerHTML={{ __html: text.p4 }} />
+            <p>{text.p5}</p>
+            <p>{text.p6}</p>
+            <div className="download-buttons">
+              <a href={text.link1} className="main-button">
+                {text.btn3}
+              </a>
+              <a href={text.link2} className="main-button">
+                {text.btn4}
+              </a>
+            </div>
           </div>
           <h2 id="ie-section">{text.h4}</h2>
           <img
@@ -208,10 +205,17 @@ const MainContainer = styled(Container)`
 
   .main-button {
     background: var(--orangeDark3);
-    font-size: 1.25rem;
     padding: 0.625rem 1.875rem;
     border-radius: 10px;
     color: white;
+    font-size: 1.25rem;
+    font-family: 'Fedra Sans', sans-serif;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.9;
+    }
   }
 
   header {
@@ -298,8 +302,10 @@ const MainContainer = styled(Container)`
 
   .download-buttons {
     display: flex;
+    width: 100%;
+    justify-content: center;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin: 2rem 0 2rem;
   }
 
   .button-bottom {
