@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import TEXT from './text';
 import { Container, Col, Row, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -80,6 +80,7 @@ function App() {
       <MainContainer
         $bannerImageDesktop={sadhguruDesktop}
         $bannerImageMobile={sadhguruMobile}
+        $lang={queryData?.lang}
       >
         <ThankYouModal
           modalOpen={showModal}
@@ -339,6 +340,16 @@ const MainContainer = styled(Container)`
     .form-inputs {
       display: flex;
       align-items: center;
+
+      ${(props) =>
+        props.$lang === 'ru' &&
+        css`
+          input,
+          select {
+            max-width: 90%;
+            margin: auto;
+          }
+        `}
     }
 
     .btn {
@@ -350,6 +361,12 @@ const MainContainer = styled(Container)`
       font-weight: 700;
       border: none;
       margin-top: 2rem;
+
+      ${(props) =>
+        props.$lang === 'ru' &&
+        css`
+          font-size: 1rem;
+        `}
     }
   }
 
@@ -359,6 +376,14 @@ const MainContainer = styled(Container)`
     justify-content: center;
     gap: 1rem;
     margin: 2rem 0 2rem;
+
+    ${(props) =>
+      props.$lang === 'ru' &&
+      css`
+        a {
+          font-size: 1rem;
+        }
+      `}
 
     @media (max-width: 600px) {
       flex-direction: column;
