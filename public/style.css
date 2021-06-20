@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'Fedra Sans';
+  src: url('resources/fonts/FedraSansLight.eot');
+  src: url('resources/fonts/FedraSansLight.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSansLight.woff2') format('woff2'),
+  url('resources/fonts/FedraSansLight.woff') format('woff'),
+  url('resources/fonts/FedraSansLight.ttf') format('truetype'),
+  url('resources/fonts/FedraSansLight.svg#FedraSansLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra Sans';
+  src: url('resources/fonts/FedraSansLightItalic.eot');
+  src: url('resources/fonts/FedraSansLightItalic.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSansLightItalic.woff2') format('woff2'),
+  url('resources/fonts/FedraSansLightItalic.woff') format('woff'),
+  url('resources/fonts/FedraSansLightItalic.ttf') format('truetype'),
+  url('resources/fonts/FedraSansLightItalic.svg#FedraSansLightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fedra Sans';
+  src: url('resources/fonts/FedraSansBookItalic.eot');
+  src: url('resources/fonts/FedraSansBookItalic.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSansBookItalic.woff2') format('woff2'),
+  url('resources/fonts/FedraSansBookItalic.woff') format('woff'),
+  url('resources/fonts/FedraSansBookItalic.ttf') format('truetype'),
+  url('resources/fonts/FedraSansBookItalic.svg#FedraSansBookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fedra Sans';
+  src: url('resources/fonts/FedraSansBook.eot');
+  src: url('resources/fonts/FedraSansBook.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSansBook.woff2') format('woff2'),
+  url('resources/fonts/FedraSansBook.woff') format('woff'),
+  url('resources/fonts/FedraSansBook.ttf') format('truetype'),
+  url('resources/fonts/FedraSansBook.svg#FedraSansBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IE_Heading';
+  src: url('resources/fonts/IE_Heading.eot');
+  src: url('resources/fonts/IE_Heading.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/IE_Heading.woff2') format('woff2'),
+  url('resources/fonts/IE_Heading.woff') format('woff'),
+  url('resources/fonts/IE_Heading.ttf') format('truetype'),
+  url('resources/fonts/IE_Heading.svg#IE_Heading') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IE_Regular';
+  src: url('resources/fonts/IE_Regular.eot');
+  src: url('resources/fonts/IE_Regular.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/IE_Regular.woff2') format('woff2'),
+  url('resources/fonts/IE_Regular.woff') format('woff'),
+  url('resources/fonts/IE_Regular.ttf') format('truetype'),
+  url('resources/fonts/IE_Regular.svg#IE_Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fedra Serif B Pro';
+  src: url('resources/fonts/FedraSerifBPro-Bold.eot');
+  src: url('resources/fonts/FedraSerifBPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSerifBPro-Bold.woff2') format('woff2'),
+  url('resources/fonts/FedraSerifBPro-Bold.woff') format('woff'),
+  url('resources/fonts/FedraSerifBPro-Bold.ttf') format('truetype'),
+  url('resources/fonts/FedraSerifBPro-Bold.svg#FedraSerifBPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra Sans Std Book';
+  src: url('resources/fonts/FedraSansStd-Book.eot');
+  src: url('resources/fonts/FedraSansStd-Book.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSansStd-Book.woff2') format('woff2'),
+  url('resources/fonts/FedraSansStd-Book.woff') format('woff'),
+  url('resources/fonts/FedraSansStd-Book.ttf') format('truetype'),
+  url('resources/fonts/FedraSansStd-Book.svg#FedraSansStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra Serif B Pro Book';
+  src: url('resources/fonts/FedraSerifBPro-Book.eot');
+  src: url('resources/fonts/FedraSerifBPro-Book.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSerifBPro-Book.woff2') format('woff2'),
+  url('resources/fonts/FedraSerifBPro-Book.woff') format('woff'),
+  url('resources/fonts/FedraSerifBPro-Book.ttf') format('truetype'),
+  url('resources/fonts/FedraSerifBPro-Book.svg#FedraSerifBPro-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra Serif B Pro Normal';
+  src: url('resources/fonts/FedraSerifBPro-Normal.eot');
+  src: url('resources/fonts/FedraSerifBPro-Normal.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSerifBPro-Normal.woff2') format('woff2'),
+  url('resources/fonts/FedraSerifBPro-Normal.woff') format('woff'),
+  url('resources/fonts/FedraSerifBPro-Normal.ttf') format('truetype'),
+  url('resources/fonts/FedraSerifBPro-Normal.svg#FedraSerifBPro-Normal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra Serif B Pro';
+  src: url('resources/fonts/FedraSerifBPro-Medium.eot');
+  src: url('resources/fonts/FedraSerifBPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSerifBPro-Medium.woff2') format('woff2'),
+  url('resources/fonts/FedraSerifBPro-Medium.woff') format('woff'),
+  url('resources/fonts/FedraSerifBPro-Medium.ttf') format('truetype'),
+  url('resources/fonts/FedraSerifBPro-Medium.svg#FedraSerifBPro-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fedra Sans Std';
+  src: url('resources/fonts/FedraSansStd-Light.eot');
+  src: url('resources/fonts/FedraSansStd-Light.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSansStd-Light.woff2') format('woff2'),
+  url('resources/fonts/FedraSansStd-Light.woff') format('woff'),
+  url('resources/fonts/FedraSansStd-Light.ttf') format('truetype'),
+  url('resources/fonts/FedraSansStd-Light.svg#FedraSansStd-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra Sans Std Demi';
+  src: url('resources/fonts/FedraSansStd-Demi.eot');
+  src: url('resources/fonts/FedraSansStd-Demi.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSansStd-Demi.woff2') format('woff2'),
+  url('resources/fonts/FedraSansStd-Demi.woff') format('woff'),
+  url('resources/fonts/FedraSansStd-Demi.ttf') format('truetype'),
+  url('resources/fonts/FedraSansStd-Demi.svg#FedraSansStd-Demi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra Sans Std';
+  src: url('resources/fonts/FedraSansStd-Medium.eot');
+  src: url('resources/fonts/FedraSansStd-Medium.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSansStd-Medium.woff2') format('woff2'),
+  url('resources/fonts/FedraSansStd-Medium.woff') format('woff'),
+  url('resources/fonts/FedraSansStd-Medium.ttf') format('truetype'),
+  url('resources/fonts/FedraSansStd-Medium.svg#FedraSansStd-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra Serif A Std Book';
+  src: url('resources/fonts/FedraSerifAStdBook.eot');
+  src: url('resources/fonts/FedraSerifAStdBook.eot?#iefix') format('embedded-opentype'),
+  url('resources/fonts/FedraSerifAStdBook.woff2') format('woff2'),
+  url('resources/fonts/FedraSerifAStdBook.woff') format('woff'),
+  url('resources/fonts/FedraSerifAStdBook.ttf') format('truetype'),
+  url('resources/fonts/FedraSerifAStdBook.svg#FedraSerifAStdBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iyc_lon';
+  src: url('resources/fonts/fontello/font/iyc_lon.eot?90910554');
+  src: url('resources/fonts/fontello/font/iyc_lon.eot?90910554#iefix') format('embedded-opentype'),
+  url('resources/fonts/fontello/font/iyc_lon.woff2?90910554') format('woff2'),
+  url('resources/fonts/fontello/font/iyc_lon.woff?90910554') format('woff'),
+  url('resources/fonts/fontello/font/iyc_lon.ttf?90910554') format('truetype'),
+  url('resources/fonts/fontello/font/iyc_lon.svg?90910554#iyc_lon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font: 400 18px/1.4 'Fedra Sans' !important;
+  font-family: 'Fedra Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    font: 400 14px/1.4 'Fedra Sans' !important;
+  }
+}
+
+
+sub, sup {
+  font-size: 50%;
+}
+
+input, input:active, input:focus, textarea:focus, select:focus {
+  outline-style: none;
+  box-shadow: none;
+  border: transparent;
+}
