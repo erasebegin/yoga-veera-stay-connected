@@ -34,6 +34,7 @@ const text = {
       'https://www.youtube.com/playlist?list=PLnqgRgprlYQgv-DbUXcOPoMTJ-LeMa-UP',
     link2:
       'https://www.youtube.com/playlist?list=PLnqgRgprlYQgJwgTSo8M29l0aJHQG2Efg',
+    link3: 'https://www.innerengineering.com/ru/online',
     p1: 'Вы хотите получить доступ к мудрости и материалам Садхгуру?',
     p2: 'Вас интересуют другие бесплатные онлайн-сессии по йоге и медитации для улучшения эмоционального равновесия, физического и психического здоровья?',
     p3: 'Вот 3 способа оставаться на связи, где бы вы ни находились:',
@@ -68,7 +69,7 @@ const text = {
     p2: 'Sei interessato ad altre sessioni gratuite di Yoga e meditazione online per migliorare il tuo equilibrio emotivo, il benessere fisico e la salute mentale?',
     p3: 'Ecco 2 modi per rimanere in contatto, ovunque tu sia:',
     p4: `Iscriviti al canale Sadhguru Italiano su <a target='_blank' rel='noopener noreferrer' href='https://www.youtube.com/channel/UCVoo2xW_PFFpdkh9vjexLTg'>youtube</a>, <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/sadhguru/?hl=en'>instagram</a> o <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/SadhguruItaliano/'>facebook</a>.`,
-    p5: 'Sperimenta l\'Ingegneria Interiore con Sadhguru nel tuo spazio, al tuo ritmo. L\'Inner Engineering Online è composto da sette sessioni di 90 minuti che impartiscono potenti strumenti dall\'antica scienza dello Yoga, con il potenziale di trasformare il tuo modo di vivere, condurre e sperimentare la tua vita.',
+    p5: "Sperimenta l'Ingegneria Interiore con Sadhguru nel tuo spazio, al tuo ritmo. L'Inner Engineering Online è composto da sette sessioni di 90 minuti che impartiscono potenti strumenti dall'antica scienza dello Yoga, con il potenziale di trasformare il tuo modo di vivere, condurre e sperimentare la tua vita.",
     p6: 'Inoltre, puoi trovare la playlist Meditazioni e Upa Yoga per continuare le tue pratiche.',
     p7: "Sperimenta l'Ingegneria Interiore con Sadhguru nel tuo spazio, al tuo ritmo. L'Inner Engineering Online è composto da sette sessioni di 90 minuti che impartiscono potenti strumenti dall'antica scienza dello Yoga, con il potenziale di trasformare il tuo modo di vivere, condurre e sperimentare la tua vita.",
     h2: 'Receive monthly updates on Sadhguru and Isha’s activities in your region. Join below!',
@@ -92,6 +93,7 @@ const text = {
       'https://www.youtube.com/playlist?list=PLe_fEYdAPCC-NxWDoM4Vd1DQMakK0kuZf',
     link2:
       'https://www.youtube.com/playlist?list=PLe_fEYdAPCC8eX_ip5m0C64exc6GERVPB',
+    link3: 'https://www.innerengineering.com/es/online',
     p1: '¿Te gustaría acceder a más sabiduría y contenido de Sadhguru?',
     p2: '¿Estás interesado en otras sesiones gratuitas de yoga y meditación online para mejorar tu equilibrio emocional, tu bienestar físico y tu salud mental?',
     p3: 'Aquí tienes 2 formas de estar en contacto, estés donde estés:',
@@ -120,6 +122,7 @@ const text = {
       'https://youtube.com/playlist?list=PLIP9FB14XTIReHefrZyDSQ2AJ8AzawjLQ',
     link2:
       'https://youtube.com/playlist?list=PLIP9FB14XTIRNrRRPreUeWG2s40h_Ltim',
+    link3: 'https://www.innerengineering.com/de/online',
     p1: 'Möchtest du mehr von Sadhgurus Weisheit und Inhalten erfahren?',
     p2: 'Bist du an weiteren kostenlosen Online-Yoga- und Meditations-Sitzungen interessiert, um dein emotionales Gleichgewicht, dein körperliches Wohlbefinden und deine geistige Gesundheit zu verbessern?',
     p3: 'Hier sind Möglichkeiten, um in Kontakt zu bleiben, wo immer du auch sein magst:',
@@ -148,6 +151,7 @@ const text = {
       'https://www.youtube.com/playlist?list=PLqJCH3uwCKvXeQ-VQuutILnNJh_uX4YbX',
     link2:
       'https://www.youtube.com/playlist?list=PLqJCH3uwCKvXFpwsuVTlZJ_0Ez9l2WCIh',
+    link3: 'https://www.innerengineering.com/fr/online',
     p1: 'Souhaitez-vous accéder à davantage de sagesse et de contenu de Sadhguru?',
     p2: "Êtes-vous intéressé par d'autres séances gratuites de yoga et de méditation en ligne pour améliorer votre équilibre émotionnel, votre bien-être physique et votre santé mentale?",
     p3: 'Voici 3 façons de rester en contact, où que vous soyez :',
