@@ -374,8 +374,20 @@ const MainContainer = styled(Container)`
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 1rem;
     margin: 2rem 0 2rem;
+
+    a {
+      margin-left: 1rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      
+      @media (max-width: 600px) {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+    }
 
     ${(props) =>
       props.$lang === 'ru' &&
