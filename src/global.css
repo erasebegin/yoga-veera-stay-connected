@@ -204,6 +204,11 @@ body {
 
 footer {
   padding: 3rem;
+
+}
+
+footer a {
+  color: #444;
 }
 
 .logo .logo-img {
